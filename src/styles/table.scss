@@ -1,0 +1,155 @@
+.custom-table {
+    thead {
+        background-color: #f9fafe;
+        .custom-tr {
+            th {
+                div {
+                    display: flex;
+                    // justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    color: #c2c3cb;
+                    svg {
+                        width: 15px;
+                        height: 15px;
+                    }
+                    .icons {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0;
+                        cursor: pointer;
+                        svg {
+                            margin: -3px;
+                        }
+                    }
+                } 
+            }
+        }
+        div {
+            color: grey;
+        }
+    }
+    tbody {
+        tr {
+            td {
+                padding: 10px 15px;
+                vertical-align: middle;
+                svg {
+                    width: 15px;
+                    height: 20px;
+                    vertical-align: middle;
+                }
+                &.project-name {
+                    color: #78739c;
+                }
+                &.pm {
+                    img {
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 4px;
+                    }
+                }
+                &.status {
+                    .container {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        gap: 10px;
+                        background-color: #78739c;
+                        // max-width: fit-content;
+                        border-radius: 4px;
+                        font-size: 14px;
+                        :first-child {
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 50px;
+                        }
+                        &.track {
+                            background-color: #e3fdf1;
+                            color: #81aa96;
+                            :first-child {
+                                background-color: #589072;
+                            }
+                        }
+                        &.hold {
+                            background-color: #e8ebfa;
+                            color: #d4d7e5;
+                            :first-child {
+                                background-color: #666b76;
+                            }
+                        }
+                        &.risk {
+                            background-color: #fdebee;
+                            color: #ad8187;
+                            :first-child {
+                                background-color: #e15975;
+                            }
+                        }
+                        &.Potential {
+                            background-color: #feefde;
+                            color: #e2c9a2;
+                            :first-child {
+                                background-color: #ab7f45;
+                            }
+                        }
+                        &.Archived {
+                            background-color: grey;
+                            :first-child {
+                                background-color: palegoldenrod;
+                            }
+                        }
+                    }
+                }
+                &.last-updated {
+                    div {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                    }
+                }
+                &.resources {
+                    text-align: -webkit-center;
+                    div {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        max-width: 30px;
+                        height: 20px;
+                        padding: 5px;
+                        border-radius: 4px;
+                        background-color: #e8ebf7;
+                        color: #9ca1ae;
+                    }
+                }
+                &.timeline {
+                    .container {
+                        display: flex;
+                        gap: 5px;
+                        padding: 0;
+                        font-size: 12px;
+                        font-size: 500;
+                        color: #6f767c;
+                        svg {
+                            width: 20px;
+                            height: 20px;
+                            rotate: 270deg;
+                        }
+                        div {
+                            background-color: #e2e6f1;
+                            padding: 0 5px;
+                            border-radius: 4px;
+                        }
+                    }
+                }
+                &.estimation {
+                    div {
+                        display: flex;
+                        gap: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

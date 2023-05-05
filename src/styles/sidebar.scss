@@ -1,0 +1,49 @@
+ @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+.sidebar {
+  width: 100%;
+  max-width: 60px;
+  background-color: #151255;
+  position: relative;
+  height: 100vh;
+  div {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    &:first-child {
+      margin-top: 5px !important;
+    }
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .folder {
+    div {
+      border: 1px solid navy;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30px;
+      height: 30px;
+    }
+    svg {
+      fill: white;
+    }
+  }
+}

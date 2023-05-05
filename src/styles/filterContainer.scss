@@ -1,0 +1,36 @@
+.filter-container {
+    display: flex;
+    gap: 30px;
+    padding: 0px 15px;
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: fit-content;
+        gap: 5px;
+        color: #989999;
+        span {
+            cursor: pointer;
+        }
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: fit-content;
+            height: 20px;
+            padding: 5px;
+            border-radius: 10px;
+            background-color: #e8ebf7;
+            color: #9ca1ae;
+            pointer-events: none;
+        }
+        &.All, &.risk, &.hold, &.Potential, &.track, &.Archived {
+            border-bottom: 2px solid #726ab0;
+            color: #726ab0;
+        }
+    }
+    .bordered {
+        border: 1px solid #f1f1f1;
+    }
+}

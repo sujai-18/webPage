@@ -1,0 +1,18 @@
+.search-bar {
+    height: 30px;
+    border-left: 0;
+    border: 1px solid #f3f3f3;
+    border-radius: 0 5px 5px 0;
+}
+.input-with-icon {
+    position: relative;
+    padding-left: 40px; /* space for icon */
+  }
+  
+  .input-with-icon::before {
+    position: absolute;
+    content: url('../svgs/searchIcon.png');
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%); 
+  }
