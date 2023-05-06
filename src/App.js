@@ -1,4 +1,3 @@
-import './App.css';
 import './styles/global.scss';
 import Sidebar from '../src/components/sidebar.js';
 import Header from '../src/components/header.js';

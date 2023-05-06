@@ -4,8 +4,10 @@ import { ReactComponent as ArrowCircleRightIcon } from '../svgs/arrowCircleRight
 import { ReactComponent as DownArrowIcon } from '../svgs/downArrowIcon.svg';
 import { ReactComponent as DocumentIcon } from '../svgs/documentIcon.svg';
 import { ReactComponent as InfoIcon } from '../svgs/infoIcon.svg';
-import { ReactComponent as SortDownArrowIcon } from '../svgs/sortDownArrowIcon.svg';
-import { ReactComponent as SortUpArrowIcon } from '../svgs/sortUpArrowIcon.svg';
+import { ReactComponent as SortUpArrowLight } from '../svgs/sortUpArrowLight.svg';
+import { ReactComponent as SortDownArrowLight } from '../svgs/sortDownArrowLight.svg';
+import { ReactComponent as SortUpArrowDark } from '../svgs/sortUpArrowDark.svg';
+
 import moment from 'moment';
 
 function ProjectTable(props) {
@@ -23,10 +25,16 @@ function ProjectTable(props) {
                   {title}
                   {['#', 'project name', 'last update'].includes(title) && (
                     <div className="icons">
-                      <SortUpArrowIcon
-                        onClick={() => sortFunction(title, 'asc')}
-                      />
-                      <SortDownArrowIcon
+                      {title === '#' ? (
+                        <SortUpArrowDark
+                          onClick={() => sortFunction(title, 'asc')}
+                        />
+                      ) : (
+                        <SortUpArrowLight
+                          onClick={() => sortFunction(title, 'asc')}
+                        />
+                      )}
+                      <SortDownArrowLight
                         onClick={() => sortFunction(title, 'desc')}
                       />
                     </div>
